@@ -1,0 +1,16 @@
+{
+  "name": "ganerat_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "nodemon ./scr/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1"
+  }
+}
