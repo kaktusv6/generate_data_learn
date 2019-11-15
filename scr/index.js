@@ -1,5 +1,6 @@
-const {Client} = require('pg');
-const {fs} = require('fs');
+
+const { Client } = require('pg');
+const { fs } = require('fs');
 
 let client = new Client({
     user: 'postgres',
@@ -27,6 +28,6 @@ let options = [
 
 for (let table of option){
     for(let i = 0; i < table.rows; ++i){
-        let query = 'insert into ' + table.table_name + ' ('
+        let query = 'insert into ' + table.table_name + ' (';
     }
 }
