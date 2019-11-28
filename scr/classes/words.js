@@ -7,7 +7,6 @@ class Words extends Base {
     }
 
     getData() {
-        console.log(faker.random.number(10) + 1);
         return "'" + faker.lorem.words(this.params.number) + "'";
     }
 }

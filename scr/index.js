@@ -6,7 +6,7 @@ const GeneratorData = require('./generator_data');
 // Указываем данные для подключение к бд
 let client = new Client({
     user: 'postgres', // заполнить своего пользователя который указан в Data source в Datagrip
-    password: '123', // заполнить пароль пользователя из Data source
+    password: 'Mamont500', // заполнить пароль пользователя из Data source
     host: 'localhost',
     port: '5432', // порт остается прежгий если не меняли при установке Postgresql
     database: 'my_store' // указать наименование database куда хотите загружать данные
@@ -21,10 +21,10 @@ let options = [
         "rows": 100000, // Число добавляемых строк в таблицу
         "columns": [ // Массив колонок
             {
-                "name": "words", // указать наименование колонки
+                "name": "name", // указать наименование колонки
                 "type": "words", // указываете тип генерируемых данных
                 "params": { // Параметры для генератора
-                    "number": 56
+                    "number": 2
                 }
             }
         ]
